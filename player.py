@@ -10,6 +10,34 @@ class Joueur(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.image.set_colorkey([0, 0, 0])
         self.position = [x, y]
+        self.speed = 2
+        self.images = {
+            'down' : self.get_image(0, 0),
+            'left' : self.get_image(0, 32),
+            'right' : self.get_image(0, 64),
+            'up' : self.get_image(0, 96),
+        }
+
+
+    def change_animation(self, animation):
+        self.image = self.images[animation]
+        self.image.set_colorkey(0, 0, 0)
+
+    def move_right(self):
+        self.change_animation("right")
+        self.position[0] += self.speed
+
+    def move_left(self):
+        self.change_animation("left")
+        self.position[0] -= self.speed
+
+    def move_above(self):
+        self.change_animation("up")
+        self.position[1] += self.speed
+
+    def move_below(self):
+        self.change_animation("down")
+        self.position[1] -= self.speed
 
     def update(self):
         self.rect.topleft = self.position

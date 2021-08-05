@@ -26,15 +26,35 @@ class Game:
         self.groupe = pyscroll.PyscrollGroup(map_layer=map_layer, default_layer=1)
         self.groupe.add(self.player)
 
+    def handle_input(self):
+        pressed = pygame.key.get_pressed()
+        if pressed[pygame.K_UP]:
+          print("haut")
+          self.player.move_above()
+        elif pressed[pygame.K_DOWN]:
+            print("bas")
+            self.player.move_below()
+        elif pressed[pygame.K_LEFT]:
+            print("gauche")
+            self.player.move_left()
+        elif pressed[pygame.K_RIGHT]:
+            print("droite")
+            self.player.move_right()
+
     def run(self):
+
+        clock = pygame.time.Clock()
+
         # creer la boucle du jeu
         running = True
         while running:
+            self.handle_input()
             self.groupe.update()
+            self.groupe.center(self.player.rect)
             self.groupe.draw(self.screen)
             pygame.display.flip()
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
-
+            clock.tick(60)
         pygame.quit()
