@@ -89,7 +89,7 @@
 </data>
  </layer>
  <objectgroup id="4" name="Doors">
-  <object id="1" type="outDoor" x="127.385" y="367.57" width="32.0895" height="16.5309"/>
+  <object id="1" name="outDoor" x="127.385" y="367.57" width="32.0895" height="16.5309"/>
   <object id="2" type="enter_spawn" x="138.082" y="373.405">
    <point/>
   </object>

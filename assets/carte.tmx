@@ -74,7 +74,7 @@
   <object id="18" type="collision" x="92.3788" y="400.632" width="92.3788" height="50.5652"/>
  </objectgroup>
  <objectgroup id="7" name="Doors">
-  <object id="19" type="inDoor" x="458.004" y="160.447" width="16.5309" height="24.3102"/>
+  <object id="19" name="inDoor" x="458.004" y="160.447" width="16.5309" height="24.3102"/>
   <object id="20" type="inDoor" x="105.455" y="436.182" width="15.0909" height="22.9091"/>
   <object id="21" name="GreenHouseSpawn" x="463.333" y="184.333">
    <point/>
