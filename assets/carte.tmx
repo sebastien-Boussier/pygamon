@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="19">
+<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="22">
  <tileset firstgid="1" source="nature.tsx"/>
  <tileset firstgid="721" source="house.tsx"/>
  <layer id="1" name="Background" width="50" height="50">
@@ -56,7 +56,7 @@
 471,472,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,474,473,633,633,634,473,474,473,474,473,474,475,476
 </data>
  </layer>
- <objectgroup id="5" name="Objects">
+ <objectgroup id="5" name="Collisions">
   <object id="4" name="player" x="140.999" y="493.983">
    <point/>
   </object>
@@ -72,6 +72,13 @@
   <object id="15" type="collision" x="18.4758" y="640.817" width="475.507" height="60.2893"/>
   <object id="17" type="collision" x="448.28" y="112.799" width="66.1237" height="64.1789"/>
   <object id="18" type="collision" x="92.3788" y="400.632" width="92.3788" height="50.5652"/>
+ </objectgroup>
+ <objectgroup id="7" name="Doors">
+  <object id="19" type="inDoor" x="458.004" y="160.447" width="16.5309" height="24.3102"/>
+  <object id="20" type="inDoor" x="105.455" y="436.182" width="15.0909" height="22.9091"/>
+  <object id="21" name="GreenHouseSpawn" x="463.333" y="184.333">
+   <point/>
+  </object>
  </objectgroup>
  <layer id="6" name="House" width="50" height="50">
   <data encoding="csv">
