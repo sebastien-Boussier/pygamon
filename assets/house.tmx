@@ -90,7 +90,7 @@
  </layer>
  <objectgroup id="4" name="Doors">
   <object id="1" name="outDoor" x="127.385" y="367.57" width="32.0895" height="16.5309"/>
-  <object id="2" name="exit_spawn" x="138.082" y="373.405">
+  <object id="2" name="enter_spawn" x="138.082" y="373.405">
    <point/>
   </object>
  </objectgroup>
